@@ -1,0 +1,32 @@
+/* styles.css */
+
+/* Styles pour simuler la fenêtre */
+.window {
+    width: 400px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.title-bar {
+    background-color: #EF24DB6B;
+    color: white;
+    padding: 5px;
+    cursor: grab;
+}
+.content {
+    padding: 10px;
+}
+/* Styles pour le conteneur des boutons */
+.button-container {
+    text-align: center; /* Pour aligner les boutons au centre horizontalement */
+}
+
+/* Styles pour les boutons */
+.button-container button {
+    margin: 5px; /* Espacement entre les boutons */
+}
