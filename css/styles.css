@@ -2,8 +2,8 @@
 
 /* Styles pour simuler la fenêtre */
 .window {
-    width: 400px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     position: absolute;
