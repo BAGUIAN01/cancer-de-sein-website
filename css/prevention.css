@@ -1,0 +1,68 @@
+/* Styles pour simuler la fenêtre */
+.window {
+    width: 730px;
+    height: 530px;
+    background-color: #f7d7d7;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+.title-bar {
+    display: flex; 
+}
+.title-bar .habitudes{
+    margin-left: 20px;
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+}
+.title-bar .habitudes .titre{
+    background-color: #EF24DB6B;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    height: 50px;
+}
+li{
+    padding: 15px;
+    
+}
+
+.title-bar .remarques .titre{
+    background-color: #EF24DB6B;
+    text-align: center;
+    font-weight: bold;
+    width: 390px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+p{
+  background-color: transparent;  
+  width: 390px;
+  font-size: 15px;
+  text-align: center;
+
+}
+
+.bkg_img {
+    /* display: flex; */
+    background-image: url(../img/prevention_new.PNG); /* Chemin relatif */
+    background-size: cover; /* Ajustez la taille de l'image au div */
+    background-position: center; /* Centrez l'image */
+    position: relative; /* Nécessaire pour positionner les boutons */
+    width: 390px; /* Définissez la largeur souhaitée */
+    height: 390px; /* Définissez la hauteur souhaitée */
+    /* background-color: red; */
+    
+}
+.content {
+    padding: 10px;
+    width: 100%; /* Définit la largeur de la div */
+    height: 100%; /* Définit la hauteur de la div */
+    background-color: transparent;
+    
+}
