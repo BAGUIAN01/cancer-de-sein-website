@@ -47,18 +47,24 @@ p{
   text-align: center;
 
 }
+a:hover {
+    /* background-color: gold; */
+    color: #00f; /* Couleur du texte du lien au survol */
+    text-decoration: underline; /* Ajouter un soulignement au survol */
+}
 
 .bkg_img {
     /* display: flex; */
     background-image: url(../img/prevention_new.PNG); /* Chemin relatif */
-    background-size: cover; /* Ajustez la taille de l'image au div */
+    background-size: 100% 100%; /* Ajustez la taille de l'image au div */
     background-position: center; /* Centrez l'image */
     position: relative; /* Nécessaire pour positionner les boutons */
     width: 390px; /* Définissez la largeur souhaitée */
     height: 390px; /* Définissez la hauteur souhaitée */
-    /* background-color: red; */
+    background-color: red;
     
 }
+
 .content {
     padding: 10px;
     width: 100%; /* Définit la largeur de la div */

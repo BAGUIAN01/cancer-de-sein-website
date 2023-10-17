@@ -110,6 +110,13 @@ li {
     font-weight: bold;
    
 }
+.button-container button:hover {
+    margin-right: 10px; /* Ajoutez l'écart horizontal entre les boutons ici */
+    font-size: 15px;
+    font-weight: bold;
+    /* border: solid 2px; */
+    background-color: #f1a9ea6b ;
+}
 
 .button-container + .button-container {
     margin-top: 50px; /* Ajoutez l'espacement vertical entre les lignes ici */
@@ -136,8 +143,11 @@ li {
     margin-top: 30px;
     margin-left: 25px;
 }
-
-
+a:hover {
+    /* background-color: gold; */
+    color: #00f; /* Couleur du texte du lien au survol */
+    text-decoration: underline; /* Ajouter un soulignement au survol */
+}
 
 
 
@@ -146,4 +156,5 @@ li {
     margin: 15px; /* Espacement entre les boutons */
     background-color: #EF24DB6B;
     color: rgb(10, 10, 10);
+    transition: background-color 0.3s ease; /* Animation de transition */
 }
