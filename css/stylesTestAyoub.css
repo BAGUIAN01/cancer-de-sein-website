@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('/home/e2021/a1elfino/Bureau/cancer/group3/img/cancer-sein_0.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin réel de votre image */
+    background-image: url('../img/cancer-sein_0.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin réel de votre image */
     background-size: cover; /* Pour que l'image de fond couvre toute la zone du corps */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     background-attachment: fixed; /* Fixe l'image de fond à la position de l'écran */
@@ -22,7 +22,6 @@ h1 {
     padding: 20px;
     border: 1px solid #000000;
     border-radius: 10px;
-    background-color: #fab9ec; /* Fond rose pour le questionnaire */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
     width: 100%; /* Prend toute la largeur disponible */
     box-sizing: border-box; /* Inclure les bordures dans la largeur totale */
@@ -36,7 +35,7 @@ h1 {
     padding-left: 20px; /* Marge à gauche pour l'espace */
 }
 
-.options {
+.options {5
     display: flex;
     flex-direction: column; /* Afficher les choix en colonne */
     align-items: flex-start; /* Aligner les choix à gauche */
