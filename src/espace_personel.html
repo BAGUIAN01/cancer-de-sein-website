@@ -8,22 +8,49 @@
     <div class="window">
         <!--button -->
         <div class="button-container">
-            <!-- <a href="#" class="bouton">Notifications</a> -->
-            <button>Notifications</button>
-            <button>carnet de santé</button>
+            <!-- <a href="#" class="bouton">Notifications</a>
             <button>Prendre RDV</button>
+            <button>carnet de santé</button> 
             <button>Assurance</button>
+        -->
+
+            <button id="notifPopup">Notifications</button>
+            <div id="notifpopup" class="hidden">
+                <span id="closePopup" class="close">&times;</span>
+                <p>Aucune nouvelle notification</p>
+            </div>
+            <button id="carnetPopup">carnet de santé</button>
+            <div id="carnetpopup" class="hidden">
+                <span id="closeCarnetPopup" class="close">&times;</span>
+                <p>Aucun carnet de santé ajouté</p>
+            </div>
+           
+            <button id="showSlots">Prendre RDV</button>
+            <div id="slotsPopup" class="hidden">
+                <span id="closeSlots" class="close">&times;</span>
+                <h2>Créneaux horaires disponibles :</h2>
+                <ul id="slotList"></ul>
+            </div>
+
+            <button id="assurPopup">Assurance</button>
+            <div id="assurpopup" class="hidden">
+                <span id="closeAssurPopup" class="close">&times;</span>
+                <p>Aucune assurance n'est contractée </p>
+                
+            </div>
+            
         </div>
         <div class="title-bar">
             <div class="cste_sante">Constantes de santé</div>
             <div class="dossier_suivi">Dossier de santé
                 <div class="content_dossier">
                     <ul>
-                        <li><a href="#">Ordonnance</a></li>
+                        <li><a id="ordoPopup" href="#">Ordonnance</a></li>
                         <li><a href="#">Agenda</a></li>
                         <li><a href="#">Guide à suivre </a></li>
                         <li><a href="#">Assistant virtuel</a></li>
                     </ul>
+                    <div id="messageArea"></div>
                   
                 </div>
                 <div class="contact">Contacts en cas d'urgence
@@ -40,29 +67,35 @@
         <div class="content">
             <div class="cte_sante_bkg">
                 <div class="button-container">
-                    <button>
+                    <button id="glycemie">
                         <img src="../img/glycemie.jpg" alt="Image 1">
                     </button>
-                    <button>
+                   
+                    <button id="imc">
                         <img src="../img/imc.jpg" alt="Image 2">
                     </button>
                 </div>
+                <div>
+                    <span id="customAlert" style="display: none;">
+                        Ce bouton ne fonctionne pas !
+                    </span>
+                   
+                </div>
+                
                 <div class="button-container">
-                    <button>
+                    <button id="pression">
                         <img src="../img/pression_art.png" alt="Image 3">
                     </button>
-                    <button>
+                    <button id="scan">
                         <img src="../img/scanner.png" alt="Image 4">
                     </button>
                 </div>
             </div>
      
         </div>
-        
-        
-        
-            <p></p>
+
         </div>
     </div>
+    <script src="../js/espace_personnel.js"></script>
 </body>
 </html>

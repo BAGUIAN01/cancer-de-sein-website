@@ -71,6 +71,7 @@
     padding: 10px;
     width: 380px; /* Définit la largeur de la div */
     height: 30px; /* Définit la hauteur de la div */
+    
 }
 .content_dossier {
     padding: 20px;
@@ -122,6 +123,11 @@ li {
     margin-top: 50px; /* Ajoutez l'espacement vertical entre les lignes ici */
 }
 
+#customAlert {
+    display: block; /* Affiche le span en tant que bloc (en dessous du bouton) */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
 .button-container button {
     background-color: #007bff;
     border: none;
@@ -157,4 +163,56 @@ a:hover {
     background-color: #EF24DB6B;
     color: rgb(10, 10, 10);
     transition: background-color 0.3s ease; /* Animation de transition */
+}
+#notifpopup, #carnetpopup, #assurpopup {
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#ordonpopup {
+    position: fixed;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.hidden {
+    display: none;
+}
+.close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#slotsPopup {
+    position: fixed;
+    top: 35%;
+    left: 75%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#slotList {
+    list-style: none;
+    padding: 0;
+}
+
+#slotList li {
+    margin: 10px 0;
+}
+.appointment-taken-message {
+    color: red;
 }
