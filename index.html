@@ -10,9 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="./css/style2.css">
 
     <title>Cancer du Sein</title>
+
+    <!-- <script>
+        function chargerContenu() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("main").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "login.html #container", true);
+            xhr.send();
+        }
+    </script> -->
+
+    
 
 
 </head>
@@ -81,7 +96,7 @@
             </ul>
             <ul class="log-mod">
                 <li>
-                    <a href="">
+                    <a href="" id="connexion" onclick="chargerContenu(); return false;">
                         <i class="uil uil-signin"></i>
                         <span class="link-name">Connexion</span>
 
@@ -109,7 +124,7 @@
                                           <!-- Main -->
 
 
-    <section class="dashboard">
+    <section class="dashboard" >
 
         <div class="top">
             <i class="uil uil-bars sidebar-toggle"></i>
@@ -122,38 +137,47 @@
             <img src="./img/profil.png" alt="">
         </div>
 
-        <div class="dash-content">
+        <div class="dash-content" id="main">
             <div class="overview">
               
 
                 <div class="boxes">
-                    <div class="box box1">
-                      
+                   
+                       
+                    <button class="box box1">
                         <img src="./icons/diagnostique.png" alt="">
+                        <span class="text">Diagonstique</span> 
+                    </button>
+                            
                         
-                        <span class="text">Diagonstique</span>
                         
-                    </div>
-                    <div class="box box2">
+                        
+                    
+                    <button class="box box2">
                         <img src="./icons/la-prevention.png" alt="">
+
                         <span class="text">Prévention</span>
-                    </div>
-                    <div class="box box3">
+                    </button>
+
+                    <button class="box box3">
                         <img src="./icons/megaphone.png" alt="">
                         <span class="text">Sensibilisation</span>
-                    </div>
-                    <div class="box box4">
+                    </button>
+
+                    <button class="box box4">
                         <img src="./icons/equipe.png" alt="">
                         <span class="text">Partage</span>
-                    </div>
-                    <div class="box box5">
+                    </button>
+
+                    <button class="box box5">
                         <img src="./icons/dossiers.png" alt="">
                         <span class="text">Espace Personel</span>
-                    </div>
-                    <div class="box box6">
+                    </button>
+
+                    <button class="box box6">
                         <img src="./icons/ordre-du-jour.png" alt="">
                         <span class="text">Agenda</span>
-                    </div>
+                    </button>
 
                 </div>
             </div>
