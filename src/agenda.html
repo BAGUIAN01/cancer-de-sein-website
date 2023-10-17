@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Monthly Agenda</title>
+    <link rel="stylesheet" type="text/css" href="../css/agenda.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Monthly Agenda</h1>
+        <div id="navContainer">
+            <button id="prevMonthBtn" onclick="previousMonth()">&#8592;</button>
+            <h2 id="currentMonth">Month Year</h2>
+            <button id="nextMonthBtn" onclick="nextMonth()">&#8594;</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody">
+                <!-- Calendar days will be generated here -->
+            </tbody>
+        </table>
+
+        <div>
+            <label for="date">Select a Date:</label>
+            <input type="date" id="date" />
+            <input type="text" id="appointment" placeholder="Enter an appointment">
+            <button onclick="addAppointment()">Add Appointment</button>
+        </div>
+    </div>
+
+    <script src="../js/agenda.js"></script>
+</body>
+
+</html>
