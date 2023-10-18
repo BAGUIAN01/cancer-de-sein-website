@@ -96,6 +96,52 @@ function chargerContenu_contact() {
 }
 
 
+function chargerContenu_diagnostique() {
+ 
+    fetch('DiagnosticAyoub.html')
+        .then(response => response.text())
+        .then(data => {
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(data, 'text/html');
+            var contenu = doc.querySelector('#diagnostique_id').innerHTML;
+            document.getElementById('main').innerHTML = contenu;
+
+            
+        })
+        .catch(error => console.error(error));
+}
+
+function chargerContenu_apropos() {
+ 
+    fetch('AccueilAyoub.html')
+        .then(response => response.text())
+        .then(data => {
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(data, 'text/html');
+            var contenu = doc.querySelector('#apropos_id').innerHTML;
+            document.getElementById('main').innerHTML = contenu;
+
+            
+        })
+        .catch(error => console.error(error));
+}
+
+function chargerContenu_loader() {
+ 
+    fetch('loader.html')
+        .then(response => response.text())
+        .then(data => {
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(data, 'text/html');
+            var contenu = doc.querySelector('#loader_id').innerHTML;
+            document.getElementById('main').innerHTML = contenu;
+
+            
+        })
+        .catch(error => console.error(error));
+}
+
+
 document.addEventListener("chargerContenu", function () {
     const loadContentButton = document.getElementById("loadContentButton");
     const contentFromPage2 = document.getElementById("contentFromPage2");

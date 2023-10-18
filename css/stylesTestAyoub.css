@@ -35,7 +35,7 @@ h1 {
     padding-left: 20px; /* Marge à gauche pour l'espace */
 }
 
-.options {5
+.options {
     display: flex;
     flex-direction: column; /* Afficher les choix en colonne */
     align-items: flex-start; /* Aligner les choix à gauche */

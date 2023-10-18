@@ -966,7 +966,7 @@ nav.close ~ .dashboard .top{
 
 /* Styles pour simuler la fenêtre */
 .window {
-  width: 100%;
+  width: 90%;
   height: 80%;
   /* background-color: #f7d7d7; */
   border: 1px solid #ccc;
@@ -975,6 +975,7 @@ nav.close ~ .dashboard .top{
   left: 50%;
   transform: translate(-50%, -50%);
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   
 }
 .title-bar {
@@ -1196,7 +1197,7 @@ a:hover {
 /* prevention */
 /* Styles pour simuler la fenêtre */
 .window_prevention {
-  width: 100%;
+  width: 90%;
   height: 80%;
   /* background-color: #f7d7d7; */
   /* border: 1px solid #ccc; */
@@ -1205,6 +1206,7 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   
 }
 .title-bar_prevention {
@@ -1283,7 +1285,7 @@ a:hover {
 
 
 
-/* contact */
+/* ******************************************************************************************contact */
 /* body {
   font-family: 'Arial', sans-serif;
   background-color: #fff;
@@ -1297,25 +1299,35 @@ a:hover {
 } */
 
 .contact-form {
-  max-width: 400px;
-  width: ;
+  /* max-width: 400px; */
+  width:60% ;
+  height: 20%;
   padding: 30px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
+  margin-top: 20px;
+  margin-left: 200px;
 }
 
-h1 {
+
+.contact-form  form {
+  height: 50%;
+  /* padding: 1px; */
+  
+}
+
+.contact-form h1 {
   color: #ff69b4;
   font-size: 28px;
   margin-bottom: 20px;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 .input-container {
   text-align: left;
-  margin: 50px 50px
+  margin-top: 1px;
 }
 
 label {
@@ -1359,4 +1371,299 @@ button {
 
 button:hover {
   background-color: #ff407b;
+}
+
+
+
+
+
+
+/* *******************************************************************************************diagnostique */
+
+#Teste_de_Diagnostic h1 {
+  color: #333;
+  margin-left: 100px;
+}
+
+#Teste_de_Diagnostic {
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  width: 100%; /* Prend toute la largeur disponible */
+  box-sizing: border-box; /* Inclure les bordures dans la largeur totale */
+}
+
+/* Style des questions */
+#Teste_de_Diagnostic .question {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left; /* Aligner le texte à gauche */
+  padding-left: 20px; /* Marge à gauche pour l'espace */
+}
+
+.options {
+  display: flex;
+  flex-direction: column; /* Afficher les choix en colonne */
+  align-items: flex-start; /* Aligner les choix à gauche */
+  margin-left: 20px; /* Marge à gauche pour les choix */
+}
+
+/* Style des cases à cocher (checkboxes) */
+#Teste_de_Diagnostic input[type="checkbox"] {
+  margin-right: 5px; /* Marge à droite pour les checkboxes */
+}
+
+
+
+
+
+
+/* ********************************************************************************************** apropos */
+
+/* Styles pour le conteneur principal */
+.container_apropos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  /* background: rgba(255, 255, 255, 0.8); Fond semi-transparent pour le contenu */
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 140px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour la zone de l'image */
+.image {
+  text-align: center;
+}
+
+/* Styles pour la zone de description */
+.description {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styles pour le paragraphe en dessous de la description */
+.paragraph {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styles pour la zone de remarque à gauche */
+.remark {
+  width: 100%;
+  padding: 20px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+}
+/* stylesAccueilAyoub.css */
+
+/* Styles pour l'image */
+.image img {
+  max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+  height: auto; /* Maintient le rapport hauteur/largeur de l'image */
+  border: 2px solid #000; /* Ajoute une bordure autour de l'image */
+  border-radius: 10px; /* Ajoute des coins arrondis à l'image */
+}
+
+
+
+
+
+
+/* ************************************************************************************************ */
+
+
+.pencil {
+  display: block;
+  width: 10em;
+  height: 10em;
+  margin-left: 600px;
+  margin-top: 300px;
+}
+
+.pencil__body1,
+.pencil__body2,
+.pencil__body3,
+.pencil__eraser,
+.pencil__eraser-skew,
+.pencil__point,
+.pencil__rotate,
+.pencil__stroke {
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.pencil__body1,
+.pencil__body2,
+.pencil__body3 {
+  transform: rotate(-90deg);
+}
+
+.pencil__body1 {
+  animation-name: pencilBody1;
+}
+
+.pencil__body2 {
+  animation-name: pencilBody2;
+}
+
+.pencil__body3 {
+  animation-name: pencilBody3;
+}
+
+.pencil__eraser {
+  animation-name: pencilEraser;
+  transform: rotate(-90deg) translate(49px,0);
+}
+
+.pencil__eraser-skew {
+  animation-name: pencilEraserSkew;
+  animation-timing-function: ease-in-out;
+}
+
+.pencil__point {
+  animation-name: pencilPoint;
+  transform: rotate(-90deg) translate(49px,-30px);
+}
+
+.pencil__rotate {
+  animation-name: pencilRotate;
+}
+
+.pencil__stroke {
+  animation-name: pencilStroke;
+  transform: translate(100px,100px) rotate(-113deg);
+}
+
+/* Animations */
+@keyframes pencilBody1 {
+  from,
+	to {
+    stroke-dashoffset: 351.86;
+    transform: rotate(-90deg);
+  }
+
+  50% {
+    stroke-dashoffset: 150.8;
+ /* 3/8 of diameter */
+    transform: rotate(-225deg);
+  }
+}
+
+@keyframes pencilBody2 {
+  from,
+	to {
+    stroke-dashoffset: 406.84;
+    transform: rotate(-90deg);
+  }
+
+  50% {
+    stroke-dashoffset: 174.36;
+    transform: rotate(-225deg);
+  }
+}
+
+@keyframes pencilBody3 {
+  from,
+	to {
+    stroke-dashoffset: 296.88;
+    transform: rotate(-90deg);
+  }
+
+  50% {
+    stroke-dashoffset: 127.23;
+    transform: rotate(-225deg);
+  }
+}
+
+@keyframes pencilEraser {
+  from,
+	to {
+    transform: rotate(-45deg) translate(49px,0);
+  }
+
+  50% {
+    transform: rotate(0deg) translate(49px,0);
+  }
+}
+
+@keyframes pencilEraserSkew {
+  from,
+	32.5%,
+	67.5%,
+	to {
+    transform: skewX(0);
+  }
+
+  35%,
+	65% {
+    transform: skewX(-4deg);
+  }
+
+  37.5%, 
+	62.5% {
+    transform: skewX(8deg);
+  }
+
+  40%,
+	45%,
+	50%,
+	55%,
+	60% {
+    transform: skewX(-15deg);
+  }
+
+  42.5%,
+	47.5%,
+	52.5%,
+	57.5% {
+    transform: skewX(15deg);
+  }
+}
+
+@keyframes pencilPoint {
+  from,
+	to {
+    transform: rotate(-90deg) translate(49px,-30px);
+  }
+
+  50% {
+    transform: rotate(-225deg) translate(49px,-30px);
+  }
+}
+
+@keyframes pencilRotate {
+  from {
+    transform: translate(100px,100px) rotate(0);
+  }
+
+  to {
+    transform: translate(100px,100px) rotate(720deg);
+  }
+}
+
+@keyframes pencilStroke {
+  from {
+    stroke-dashoffset: 439.82;
+    transform: translate(100px,100px) rotate(-113deg);
+  }
+
+  50% {
+    stroke-dashoffset: 164.93;
+    transform: translate(100px,100px) rotate(-113deg);
+  }
+
+  75%,
+	to {
+    stroke-dashoffset: 439.82;
+    transform: translate(100px,100px) rotate(112deg);
+  }
 }
