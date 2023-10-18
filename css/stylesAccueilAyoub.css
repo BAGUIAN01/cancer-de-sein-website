@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('../img/cancer-sein_0.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin réel de votre image */
+    background-size: cover; /* Pour que l'image de fond couvre toute la zone du corps */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-attachment: fixed; /* Fixe l'image de fond à la position de l'écran */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Styles pour le conteneur principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour le contenu */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Styles pour la zone de l'image */
+.image {
+    text-align: center;
+}
+
+/* Styles pour la zone de description */
+.description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styles pour le paragraphe en dessous de la description */
+.paragraph {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styles pour la zone de remarque à gauche */
+.remark {
+    width: 20%;
+    padding: 20px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+}
+/* stylesAccueilAyoub.css */
+
+/* Styles pour l'image */
+.image img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient le rapport hauteur/largeur de l'image */
+    border: 2px solid #000; /* Ajoute une bordure autour de l'image */
+    border-radius: 10px; /* Ajoute des coins arrondis à l'image */
+}

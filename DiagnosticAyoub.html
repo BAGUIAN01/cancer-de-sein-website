@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic</title>
+    <link rel="stylesheet" type="text/css" href="../css/stylesTestAyoub.css">
+</head>
+<body>
+    <h1>Diagnostic </h1>
+    <div id="Teste_de_Diagnostic">
+        <form id="quizForm">
+            <div class="question">
+                <p>Question 1 : Avez-vous des antécédents familliaux qui ont été diagnostiqués par un cancer du sein ?</p>
+                <div class="options">
+                    <input type="radio" name="q1" value="1"> Mère/Soeur
+                    <input type="radio" name="q1" value="2"> Plusieurs membres de la famille
+                    <input type="radio" name="q1" value="0"> Aucun
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 2 : Avez-vous remarqué des changements récents dans vos seins tels que des douleurs, des bosses ou des modifications de la peau ?</p>
+                <div class="options">
+                    <input type="radio" name="q2" value="1"> Oui
+                    <input type="radio" name="q2" value="0"> Non
+                </div>
+            </div>
+            <!-- Ajout de la question sur le cancer du sein -->
+            <div class="question">
+                <p>Question 3 : Avez-vous déja reçu un diagnostic de tumeur bénigne (non cancéreuse) du sein ?</p>
+                <div class="options">
+                    <input type="radio" name="q3" value="0"> Oui
+                    <input type="radio" name="q3" value="1"> Non
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 4 : Avez-vous déja eu des résultats anormaux lors de précédents examens ?</p>
+                <div class="options">
+                    <input type="checkbox" name="q4[]" value="2"> Biopsie mammaire anormale
+                    <input type="checkbox" name="q4[]" value="1"> Lobules atypiques ou hyperplasie
+                    <input type="checkbox" name="q4[]" value="1"> Antécédents de radiothérapie thoracique
+                    <input type="checkbox" name="q4[]" value="0"> Aucun
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 5 : Avez-vous déja pris des médicaments hormonaux tels que des contraceptifs oraux ou des traitements hormonaux ?</p>
+                <div class="options">
+                    <input type="radio" name="q5" value="1"> Oui
+                    <input type="radio" name="q5" value="0"> Non
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 6 : A quelle fréquence pratiquez-vous l'auto examen des seins ?</p>
+                <div class="options">
+                    <input type="radio" name="q6" value="0"> Mensuellement
+                    <input type="radio" name="q6" value="0.5"> Tous les trois mois 
+                    <input type="radio" name="q6" value="1"> Annuellement
+                    <input type="radio" name="q6" value="1.5"> Jamais
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 7 : Avez-vous des facteurs de risque liés au mode de vie ?</p>
+                <div class="options">
+                    <input type="checkbox" name="q7[]" value="1"> Consommation d'alcool
+                    <input type="checkbox" name="q7[]" value="1"> Tabagisme
+                    <input type="checkbox" name="q7[]" value="1"> Obésité
+                    <input type="checkbox" name="q7[]" value="1"> Alimentation déséquilibrée
+                    <input type="checkbox" name="q7[]" value="0"> Healthy life 
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 8 : Avez-vous des symptomes tels que des écoulements du mamelon ou des ganglions lumphatiques enflés?</p>
+                <div class="options">
+                    <input type="radio" name="q8" value="1"> Oui
+                    <input type="radio" name="q8" value="0"> Non
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 9 : Quel est votre âge ?</p>
+                <div class="options">
+                    <input type="number" name="q9" id="age" min="0" required>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>Question 10 : État de pollution de l'air dans votre région (de 1 à 10) :</p>
+                <div class="options">
+                    <input type="number" name="q10" id="airPollution" min="1" max="10" required>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>Question 11 : État de pollution de l'eau dans votre région (de 1 à 10) :</p>
+                <div class="options">
+                    <input type="number" name="q11" id="waterPollution" min="1" max="10" required>
+                </div>
+            </div>
+            <div class="progress-container">
+                <label for="risk-progress">Taux de risque :</label>
+                <progress id="risk-progress" max="100" ></progress>
+            </div>
+
+            
+            <input type="submit" value="Calculer le résultat">
+        </form>
+        <div id="result"></div>
+    </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="../js/diagnosticAyoub.js"></script>
+</body>
+</html>
+
+
+
+
+

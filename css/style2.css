@@ -297,6 +297,9 @@ body.dark .switch:before{
     padding: 10px 14px;
     transition: var(--tran-05);
     background-image: url(../img/cancer-sein_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Redimensionne l'image pour couvrir toute la surface du fond */
+    background-attachment: fixed; 
     
     
     
@@ -761,6 +764,9 @@ nav.close ~ .dashboard .top{
 
   /* signup */
 
+
+
+
   /* *{
     margin: 0;
     padding: 0;
@@ -946,3 +952,411 @@ nav.close ~ .dashboard .top{
     cursor: pointer;
   }
   
+
+
+
+
+
+
+
+
+  /* espace perso */
+
+  /* styles.css */
+
+/* Styles pour simuler la fenêtre */
+.window {
+  width: 100%;
+  height: 80%;
+  /* background-color: #f7d7d7; */
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  
+}
+.title-bar {
+  /* background-color: #EF24DB6B; */
+  color: rgba(10, 10, 10, 0.897);
+  padding: 5px;
+  cursor: grab;
+  margin-right: 100px;
+  
+  display: flex;
+  /* width: 350px; Définit la largeur de la div */
+  /* height: 30px; Définit la hauteur de la div */
+}
+.dossier_suivi {
+  background-color: #EF24DB6B;
+  color: rgba(10, 10, 10, 0.897);
+  padding: 5px;
+  cursor: grab;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-top: 50px;
+  width: 230px; /* Définit la largeur de la div */
+  height: 30px; /* Définit la hauteur de la div */
+}
+.dossier_sante {
+  background-color: #EF24DB6B;
+  color: rgba(10, 10, 10, 0.897);
+  padding: 5px;
+  cursor: grab;
+  margin-top: 100;
+  /* margin-left: auto; */
+  width: 230px; /* Définit la largeur de la div */
+  height: 200px; /* Définit la hauteur de la div */
+}
+
+.cste_sante {
+  background-color: #EF24DB6B;
+  color: rgba(10, 10, 10, 0.897);
+  padding: 5px;
+  cursor: grab;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: 100px;
+  margin-top: 50px;
+  display: flex;
+  width: 300px; /* Définit la largeur de la div */
+  height: 30px; /* Définit la hauteur de la div */
+}
+.cte_sante_bkg {
+  /* display: flex; */
+  /* background-image: url('../img/cancer-sein_0.jpg'); Chemin relatif */
+  background-size: cover; /* Ajustez la taille de l'image au div */
+  background-position: center; /* Centrez l'image */
+  position: relative; /* Nécessaire pour positionner les boutons */
+  width: 300px; /* Définissez la largeur souhaitée */
+  height: 360px; /* Définissez la hauteur souhaitée */
+  
+}
+.content {
+  padding: 10px;
+  width: 200px; /* Définit la largeur de la div */
+  height: 30px; /* Définit la hauteur de la div */
+  margin-left: 100px;
+  
+}
+.content_dossier {
+  padding: 20px;
+  width: 380px; /* Définit la largeur de la div */
+  height: 30px; /* Définit la hauteur de la div */
+}
+.contact {
+  background-color: #EF24DB6B;
+  color: rgba(10, 10, 10, 0.897);
+  margin-top: 150px;
+  /* margin-bottom: 50px; */
+  margin-right: auto;
+  margin-left: -5px;
+  padding: 5px;
+  width: 200px; /* Définit la largeur de la div */
+  height: 70px; /* Définit la hauteur de la div */
+}
+
+li {
+  margin-top: 10px; /* Augmenter l'espace entre les listes */
+}
+
+
+.button-container {
+  
+
+  display: flex;
+  justify-content: center; /* Alignement horizontal au centre */
+  align-items: center; /* Alignement vertical au centre */
+  margin-right: 10px;
+  /* Autres styles pour .button-container ici */
+}
+
+.button-container button {
+  margin-right: 10px; /* Ajoutez l'écart horizontal entre les boutons ici */
+  font-size: 15px;
+  font-weight: bold;
+  
+ 
+}
+.button-container button:hover {
+  margin-right: 10px; /* Ajoutez l'écart horizontal entre les boutons ici */
+  font-size: 15px;
+  font-weight: bold;
+  /* border: solid 2px; */
+  background-color: #f1a9ea6b ;
+}
+
+.button-container + .button-container {
+  margin-top: 50px; /* Ajoutez l'espacement vertical entre les lignes ici */
+}
+
+#customAlert {
+  display: block; /* Affiche le span en tant que bloc (en dessous du bouton) */
+  text-align: center; /* Centre le texte horizontalement */
+}
+
+.button-container button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  margin-right: 10px; /* Ajoutez l'écart horizontal entre les boutons ici */
+  /* Autres styles pour les boutons ici */
+}
+
+.button-container img {
+  max-width: 100px; /* Limite la largeur des images dans les boutons */
+  background-color: transparent;
+}
+
+
+.contact ul {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+a:hover {
+  /* background-color: gold; */
+  color: #00f; /* Couleur du texte du lien au survol */
+  text-decoration: underline; /* Ajouter un soulignement au survol */
+}
+
+
+
+/* Styles pour les boutons */
+.button-container button {
+  margin: 15px; /* Espacement entre les boutons */
+  background-color: #EF24DB6B;
+  color: rgb(10, 10, 10);
+  transition: background-color 0.3s ease; /* Animation de transition */
+}
+#notifpopup, #carnetpopup, #assurpopup {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#ordonpopup {
+  position: fixed;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.hidden {
+  display: none;
+}
+.close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+#slotsPopup {
+  position: fixed;
+  top: 35%;
+  left: 75%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#slotList {
+  list-style: none;
+  padding: 0;
+}
+
+#slotList li {
+  margin: 10px 0;
+}
+.appointment-taken-message {
+  color: red;
+}
+
+
+
+
+
+
+
+/* prevention */
+/* Styles pour simuler la fenêtre */
+.window_prevention {
+  width: 100%;
+  height: 80%;
+  /* background-color: #f7d7d7; */
+  /* border: 1px solid #ccc; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  
+}
+.title-bar_prevention {
+  display: flex; 
+}
+.title-bar_prevention .habitudes{
+  margin-left: 20px;
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+}
+.title-bar_prevention .habitudes .titre{
+  background-color: #EF24DB6B;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  height: 50px;
+}
+.content_prevention  .habitudes{
+  width: 50%;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+.habitudes li{
+  padding: 15px;
+  
+}
+/* .title-bar_prevention .remarques{
+  width: 400px;
+} */
+.title-bar_prevention .remarques{
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.title-bar_prevention .remarques .titre{
+  background-color: #EF24DB6B;
+  text-align: center;
+  font-weight: bold;
+  width: 390px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.titre_prevention p{
+background-color: transparent;  
+width: 390px;
+font-size: 15px;
+text-align: center;
+
+}
+a:hover {
+  /* background-color: gold; */
+  color: #00f; /* Couleur du texte du lien au survol */
+  text-decoration: underline; /* Ajouter un soulignement au survol */
+}
+
+.bkg_img {
+  /* display: flex; */
+  background-image: url(../img/prevention_new.PNG); /* Chemin relatif */
+  background-size: 100% 100%; /* Ajustez la taille de l'image au div */
+  background-position: center; /* Centrez l'image */
+  position: relative; /* Nécessaire pour positionner les boutons */
+  width: 390px; /* Définissez la largeur souhaitée */
+  height: 390px; /* Définissez la hauteur souhaitée */
+  background-color: red;
+  
+}
+
+.content_prevention {
+  padding: 10px;
+  width: 100%; /* Définit la largeur de la div */
+  height: 100%; /* Définit la hauteur de la div */
+  background-color: transparent;
+  
+}
+
+
+
+/* contact */
+/* body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  
+} */
+
+.contact-form {
+  max-width: 400px;
+  width: ;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #ff69b4;
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.input-container {
+  text-align: left;
+  margin: 50px 50px
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ff69b4;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ff69b4;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  margin-top: 5px;
+}
+
+textarea {
+  height: 120px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ff407b;
+}
