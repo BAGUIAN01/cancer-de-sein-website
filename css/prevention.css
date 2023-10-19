@@ -61,7 +61,7 @@ a:hover {
     position: relative; /* Nécessaire pour positionner les boutons */
     width: 390px; /* Définissez la largeur souhaitée */
     height: 390px; /* Définissez la hauteur souhaitée */
-    background-color: red;
+    /* background-color: red; */
     
 }
 

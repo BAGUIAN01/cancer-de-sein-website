@@ -7,55 +7,74 @@ function showCustomAlert() {
     }, 1000);
 }
 
-//btn des constantes de santé
-const glycemieButton = document.getElementById("glycemie");
-glycemieButton.onclick = showCustomAlert;
-const pressionButton = document.getElementById("pression");
-pressionButton.onclick = showCustomAlert;
-const imcButton = document.getElementById("imc");
-imcButton.onclick = showCustomAlert;
-const scanButton = document.getElementById("scan");
-scanButton.onclick = showCustomAlert;
+
 
 //btn de la barre de titre
-document.getElementById("notifPopup").addEventListener("click", function() {
+function notifPopup() {
     var popup = document.getElementById("notifpopup");
-    popup.style.display = "block";
-
-    document.getElementById("closePopup").addEventListener("click", function() {
-        popup.style.display = "none";
+    if (popup.classList.contains("hidden")) {
+        popup.classList.remove("hidden");
+    } else {
+        popup.classList.add("hidden");
+    }
+    // Ajoutez un gestionnaire d'événements pour le bouton de fermeture
+    var closeBtn = document.getElementById("closePopup");
+    closeBtn.addEventListener("click", function() {
+        notifPopup(); // Appel de la fonction pour fermer le popup
     });
-
-});
-document.getElementById("carnetPopup").addEventListener("click", function() {
+}
+function carnetPopup() {
     var popup = document.getElementById("carnetpopup");
-    popup.style.display = "block";
-
-    document.getElementById("closeCarnetPopup").addEventListener("click", function() {
-        popup.style.display = "none";
+    if (popup.classList.contains("hidden")) {
+        popup.classList.remove("hidden");
+    } else {
+        popup.classList.add("hidden");
+    }
+    // Ajoutez un gestionnaire d'événements pour le bouton de fermeture
+    var closeBtn = document.getElementById("closeCarnetPopup");
+    closeBtn.addEventListener("click", function() {
+        carnetPopup(); // Appel de la fonction pour fermer le popup
     });
-
-});
-document.getElementById("assurPopup").addEventListener("click", function() {
+}
+function assurPopup() {
     var popup = document.getElementById("assurpopup");
-    popup.style.display = "block";
-
-    document.getElementById("closeAssurPopup").addEventListener("click", function() {
-        popup.style.display = "none";
+    if (popup.classList.contains("hidden")) {
+        popup.classList.remove("hidden");
+    } else {
+        popup.classList.add("hidden");
+    }
+    // Ajoutez un gestionnaire d'événements pour le bouton de fermeture
+    var closeBtn = document.getElementById("closeAssurPopup");
+    closeBtn.addEventListener("click", function() {
+        assurPopup(); // Appel de la fonction pour fermer le popup
     });
+}
 
-});
+function afficherMessage(element) {
+    var messages = {
+        "Ordonnance": "Aucune ordonnance.",
+        "Agenda": "Aucun agenda créé.",
+        "Guide à suivre": "Aucun guide disponible.",
+        "Assistant virtuel": "Pas implémenté."
+    };
 
-//btn dossier de suivi
-// Tableau des messages pour chaque élément de la liste
-var messages = {
-    "Ordonnance": "Aucune ordonnance.",
-    "Agenda": "Aucun agenda crée.",
-    "Guide à suivre": "Aucun guide disponible.",
-    "Assistant virtuel": "Pas implementé."
-};
+    var messageArea = document.getElementById("messageArea");
 
-var messageArea = document.getElementById("messageArea");
+    // Obtenez le texte de l'élément de la liste
+    var listItemText = element.textContent;
+
+    // Affichez le message correspondant dans la zone de message
+    if (messages.hasOwnProperty(listItemText)) {
+        messageArea.textContent = messages[listItemText];
+
+        // Utilisez setTimeout pour masquer le message après 1 seconde
+        setTimeout(function() {
+            messageArea.textContent = "";
+        }, 1000); // 1000 millisecondes = 1 seconde
+    } else {
+        messageArea.textContent = "";
+    }
+}
 
 // Obtenez tous les éléments de liste
 var listItems = document.querySelectorAll("ul li a");
@@ -64,46 +83,16 @@ var listItems = document.querySelectorAll("ul li a");
 listItems.forEach(function(item) {
     item.addEventListener("click", function(event) {
         event.preventDefault(); // Empêche le lien de se comporter comme une URL
-
-        // Obtenez le texte de l'élément de la liste
-        var listItemText = item.textContent;
-
-        // Affichez le message correspondant dans la zone de message
-        if (messages.hasOwnProperty(listItemText)) {
-            messageArea.textContent = messages[listItemText];
-        } else {
-            messageArea.textContent = "Message non trouvé.";
-        }
-    });
-});
-// ... (le code précédent)
-
-// Ajoutez un gestionnaire d'événements à chaque élément de la liste
-listItems.forEach(function(item) {
-    item.addEventListener("click", function(event) {
-        event.preventDefault(); // Empêche le lien de se comporter comme une URL
-
-        // Obtenez le texte de l'élément de la liste
-        var listItemText = item.textContent;
-
-        // Affichez le message correspondant dans la zone de message
-        if (messages.hasOwnProperty(listItemText)) {
-            messageArea.textContent = messages[listItemText];
-
-            // Utilisez setTimeout pour masquer le message après 1 seconde
-            setTimeout(function() {
-                messageArea.textContent = "";
-            }, 1000); // 1000 millisecondes = 1 seconde
-        } else {
-            messageArea.textContent = "";
-        }
+        afficherMessage(item);
     });
 });
 
 
 
-//prise de RDV
-document.getElementById("showSlots").addEventListener("click", function() {
+
+// //prise de RDV
+
+function prendreRDV() {
     var slotsPopup = document.getElementById("slotsPopup");
     slotsPopup.style.display = "block";
 
@@ -134,8 +123,4 @@ document.getElementById("showSlots").addEventListener("click", function() {
         });
         slotList.appendChild(slotItem);
     });
-});
-
-
-
-
+}

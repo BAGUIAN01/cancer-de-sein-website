@@ -14,27 +14,29 @@
             <button>Assurance</button>
         -->
 
-            <button id="notifPopup">Notifications</button>
+            <!-- <button id="notifPopup">Notifications</button> -->
+            <button id="notifPopup" onclick="notifPopup()">Notifications</button>
             <div id="notifpopup" class="hidden">
-                <span id="closePopup" class="close">&times;</span>
+                <span id="closePopup" class="close" onclick="">&times;</span>
                 <p>Aucune nouvelle notification</p>
             </div>
-            <button id="carnetPopup">carnet de santé</button>
+            
+            <button id="carnetPopup" onclick="carnetPopup()">carnet de santé</button>
             <div id="carnetpopup" class="hidden">
-                <span id="closeCarnetPopup" class="close">&times;</span>
+                <span id="closeCarnetPopup" class="close" onclick="">&times;</span>
                 <p>Aucun carnet de santé ajouté</p>
             </div>
            
-            <button id="showSlots">Prendre RDV</button>
+            <button id="showSlots" onclick="prendreRDV()">Prendre RDV</button>
             <div id="slotsPopup" class="hidden">
-                <span id="closeSlots" class="close">&times;</span>
+                <span id="closeSlots" class="close" >&times;</span>
                 <h2>Créneaux horaires disponibles :</h2>
                 <ul id="slotList"></ul>
             </div>
 
-            <button id="assurPopup">Assurance</button>
+            <button id="assurPopup" onclick="assurPopup()"> Assurance</button>
             <div id="assurpopup" class="hidden">
-                <span id="closeAssurPopup" class="close">&times;</span>
+                <span id="closeAssurPopup" class="close" onclick="">&times;</span>
                 <p>Aucune assurance n'est contractée </p>
                 
             </div>
@@ -45,10 +47,10 @@
             <div class="dossier_suivi">Dossier de santé
                 <div class="content_dossier">
                     <ul>
-                        <li><a id="ordoPopup" href="#">Ordonnance</a></li>
-                        <li><a href="#">Agenda</a></li>
-                        <li><a href="#">Guide à suivre </a></li>
-                        <li><a href="#">Assistant virtuel</a></li>
+                        <li><a id="ordoPopup" href="#" onclick="afficherMessage()" >Ordonnance</a></li>
+                        <li><a href="#" onclick="afficherMessage()">Agenda</a></li>
+                        <li><a href="#" onclick="afficherMessage()">Guide à suivre</a></li>
+                        <li><a href="#"onclick="afficherMessage()">Assistant virtuel</a></li>
                     </ul>
                     <div id="messageArea"></div>
                   
@@ -67,11 +69,11 @@
         <div class="content">
             <div class="cte_sante_bkg">
                 <div class="button-container">
-                    <button id="glycemie">
+                    <button id="glycemie" onclick="showCustomAlert()">
                         <img src="../img/glycemie.jpg" alt="Image 1">
                     </button>
                    
-                    <button id="imc">
+                    <button id="imc" onclick="showCustomAlert()">
                         <img src="../img/imc.jpg" alt="Image 2">
                     </button>
                 </div>
@@ -83,10 +85,10 @@
                 </div>
                 
                 <div class="button-container">
-                    <button id="pression">
+                    <button id="pression" onclick="showCustomAlert()">
                         <img src="../img/pression_art.png" alt="Image 3">
                     </button>
-                    <button id="scan">
+                    <button id="scan" onclick="showCustomAlert()">
                         <img src="../img/scanner.png" alt="Image 4">
                     </button>
                 </div>
