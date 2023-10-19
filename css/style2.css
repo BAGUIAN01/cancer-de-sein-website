@@ -960,7 +960,7 @@ nav.close ~ .dashboard .top{
 
 
 
-  /* espace perso */
+  /* ************************************************************************************************espace perso */
 
   /* styles.css */
 
@@ -976,6 +976,7 @@ nav.close ~ .dashboard .top{
   transform: translate(-50%, -50%);
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
   
 }
 .title-bar {
@@ -1051,7 +1052,7 @@ nav.close ~ .dashboard .top{
 .contact {
   background-color: #EF24DB6B;
   color: rgba(10, 10, 10, 0.897);
-  margin-top: 150px;
+  margin-top: 200px;
   /* margin-bottom: 50px; */
   margin-right: auto;
   margin-left: -5px;
@@ -1194,7 +1195,7 @@ a:hover {
 
 
 
-/* prevention */
+/* ************************************************************************************************$prevention */
 /* Styles pour simuler la fenêtre */
 .window_prevention {
   width: 90%;
@@ -1207,31 +1208,41 @@ a:hover {
   transform: translate(-50%, -50%);
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
   
 }
 .title-bar_prevention {
   display: flex; 
 }
-.title-bar_prevention .habitudes{
+/* .title-bar_prevention .habitudes{
   margin-left: 20px;
-  background-color: transparent;
+  
+  background-color: #EF24DB6B;
   width: 300px;
-  height: 500px;
-}
+  height: 100px;
+} */
 .title-bar_prevention .habitudes .titre{
   background-color: #EF24DB6B;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   font-weight: bold;
   height: 50px;
+  margin-top: 20px;
+  width: 300px;
+  
 }
-.content_prevention  .habitudes{
-  width: 50%;
+/* .title-bar_prevention .content_prevention  .habitudes{
+  width: 20%;
   margin-left: 300px;
-  margin-top: 50px;
-}
+  margin-top: 100px;
+  background-color: #EF24DB6B; 
+} */
 .habitudes li{
-  padding: 15px;
+  margin-top: 70px;
+  padding: auto;
+  margin-left: 30px;
+  /* background-color: #EF24DB6B; */
+
   
 }
 /* .title-bar_prevention .remarques{
@@ -1240,7 +1251,7 @@ a:hover {
 .title-bar_prevention .remarques{
   width: 50%;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .title-bar_prevention .remarques .titre{
   background-color: #EF24DB6B;
@@ -1248,15 +1259,27 @@ a:hover {
   font-weight: bold;
   width: 390px;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
 .titre_prevention p{
 background-color: transparent;  
 width: 390px;
 font-size: 15px;
 text-align: center;
+margin-top: 30px;
 
 }
+.titre_prevention .attention{
+  /* background-color: red;   */
+
+  width: 390px;
+  font-size: 15px;
+  text-align: left;
+  margin-top: 20px;
+  font-weight: bold;
+  
+  }
 a:hover {
   /* background-color: gold; */
   color: #00f; /* Couleur du texte du lien au survol */
@@ -1666,4 +1689,100 @@ input[type="submit"] {
     stroke-dashoffset: 439.82;
     transform: translate(100px,100px) rotate(112deg);
   }
+}
+
+
+/* ************************************************************************************************ */
+
+
+#container {
+  /* background: rgba(255, 255, 255, 0.7); */
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 70px;
+  width: 80%;
+  height: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+  /* Set a maximum width for the calendar */
+}
+
+th,
+td {
+  border: none;
+  /* Remove the border */
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  background-color: rgba(255, 160, 200, 0.8);
+  /* Header background color */
+  color: white;
+}
+
+td {
+  background-color: rgba(255, 255, 255, 0.7);
+  /* Cell background color with transparency */
+  position: relative;
+  /* Create a relative positioning context for the day highlight */
+  cursor: pointer;
+  /* Add a cursor pointer for the highlighted day */
+}
+
+td.day-highlight {
+  background-color: rgba(255, 160, 200, 0.8) !important;
+  /* Highlight color */
+  color: white;
+}
+
+.appointment-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  list-style: none;
+  padding: 0;
+}
+
+.appointment-list li {
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+td.day-highlight.clicked .appointment-list {
+  display: block;
+}
+
+#navContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  background-color: rgba(255, 160, 200, 0.8);
+  /* Warmer pink background color with transparency */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgba(255, 100, 150, 0.9);
+  /* Lighter and warmer pink on hover */
 }

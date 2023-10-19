@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Espace personnel</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles_espace_perso.css">
+    <link rel="stylesheet" type="text/css" href="./css/style2.css">
 </head>
 
 
@@ -48,10 +48,10 @@
                 <div class="dossier_suivi">Dossier de santé
                     <div class="content_dossier">
                         <ul>
-                            <li><a id="ordoPopup" href="#">Ordonnance</a></li>
-                            <li><a href="#">Agenda</a></li>
-                            <li><a href="#">Guide à suivre </a></li>
-                            <li><a href="#">Assistant virtuel</a></li>
+                            <li><a id="ordoPopup" href="" onclick="setupListClickHandler(); return false;">Ordonnance</a></li>
+                            <li><a href="" onclick="setupListClickHandler(); return false;">Agenda</a></li>
+                            <li><a href="#" onclick="setupListClickHandler(); return false;">Guide à suivre </a></li>
+                            <li><a href="#" onclick="setupListClickHandler(); return false;">Assistant virtuel</a></li>
                         </ul>
                         <div id="messageArea"></div>
                       
@@ -72,11 +72,11 @@
             <div class="content">
                 <div class="cte_sante_bkg">
                     <div class="button-container">
-                        <button id="glycemie">
+                        <button id="glycemie" onclick="showCustomAlert(); return false;">
                             <img src="../img/glycemie.jpg" alt="Image 1">
                         </button>
                        
-                        <button id="imc">
+                        <button id="imc" onclick="showCustomAlert(); return false;">
                             <img src="../img/imc.jpg" alt="Image 2">
                         </button>
                     </div>
@@ -88,10 +88,10 @@
                     </div>
                     
                     <div class="button-container">
-                        <button id="pression">
+                        <button id="pression" onclick="showCustomAlert(); return false;">
                             <img src="../img/pression_art.png" alt="Image 3">
                         </button>
-                        <button id="scan">
+                        <button id="scan" onclick="showCustomAlert(); return false;">
                             <img src="../img/scanner.png" alt="Image 4">
                         </button>
                     </div>
@@ -105,6 +105,6 @@
     </div>
     
 
-    <script src="../js/index.js"></script>
+    <script src="../js/espace_personnel.js"></script>
 </body>
 </html>

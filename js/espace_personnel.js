@@ -18,6 +18,9 @@ const scanButton = document.getElementById("scan");
 scanButton.onclick = showCustomAlert;
 
 //btn de la barre de titre
+function showpopup(){
+    
+}
 document.getElementById("notifPopup").addEventListener("click", function() {
     var popup = document.getElementById("notifpopup");
     popup.style.display = "block";

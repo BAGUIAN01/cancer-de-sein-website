@@ -31,7 +31,9 @@ sidebarToggle.addEventListener("click", () => {
     }
 })
 
-
+function rechargerPage() {
+    location.reload(); // Cette ligne recharge la page
+}
 
 
 function chargerContenu() {
@@ -141,6 +143,21 @@ function chargerContenu_loader() {
         .catch(error => console.error(error));
 }
 
+function chargerContenu_agenda() {
+ 
+    fetch('agenda.html')
+        .then(response => response.text())
+        .then(data => {
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(data, 'text/html');
+            var contenu = doc.querySelector('#agenda_id').innerHTML;
+            document.getElementById('main').innerHTML = contenu;
+
+            
+        })
+        .catch(error => console.error(error));
+}
+
 
 document.addEventListener("chargerContenu", function () {
     const loadContentButton = document.getElementById("loadContentButton");
@@ -191,7 +208,7 @@ return false;
 
 
 
-// espace personel
+// ****************************************************************************************espace personel
 function showCustomAlert() {
     const customAlert = document.getElementById("customAlert");
     customAlert.style.display = "block";
@@ -200,6 +217,7 @@ function showCustomAlert() {
         customAlert.style.display = "none"; // Cache le message personnalisé après 1 seconde
     }, 1000);
 }
+
 
 //btn des constantes de santé
 const glycemieButton = document.getElementById("glycemie");
@@ -240,59 +258,32 @@ document.getElementById("assurPopup").addEventListener("click", function() {
 
 });
 
-//btn dossier de suivi
-// Tableau des messages pour chaque élément de la liste
-var messages = {
-    "Ordonnance": "Aucune ordonnance.",
-    "Agenda": "Aucun agenda crée.",
-    "Guide à suivre": "Aucun guide disponible.",
-    "Assistant virtuel": "Pas implementé."
-};
 
-var messageArea = document.getElementById("messageArea");
 
-// Obtenez tous les éléments de liste
-var listItems = document.querySelectorAll("ul li a");
-
-// Ajoutez un gestionnaire d'événements à chaque élément de la liste
-listItems.forEach(function(item) {
-    item.addEventListener("click", function(event) {
-        event.preventDefault(); // Empêche le lien de se comporter comme une URL
-
-        // Obtenez le texte de l'élément de la liste
-        var listItemText = item.textContent;
-
-        // Affichez le message correspondant dans la zone de message
-        if (messages.hasOwnProperty(listItemText)) {
-            messageArea.textContent = messages[listItemText];
-        } else {
-            messageArea.textContent = "Message non trouvé.";
-        }
+function setupListClickHandler() {
+    var messages = {
+        "Ordonnance": "Aucune ordonnance.",
+        "Agenda": "Aucun agenda crée.",
+        "Guide à suivre": "Aucun guide disponible.",
+        "Assistant virtuel": "Pas implementé."
+    };
+    var messageArea = document.getElementById("messageArea");
+    var listItems = document.querySelectorAll("ul li a");
+    listItems.forEach(function(item) {
+        item.addEventListener("click", function(event) {
+            event.preventDefault();
+            var listItemText = item.textContent;
+            if (messages.hasOwnProperty(listItemText)) {
+                messageArea.textContent = messages[listItemText];
+                setTimeout(function() {
+                    messageArea.textContent = "";
+                }, 5000); // 1000 millisecondes = 1 seconde
+            } else {
+                messageArea.textContent = "Message non trouvé.";
+            }
+        });
     });
-});
-// ... (le code précédent)
-
-// Ajoutez un gestionnaire d'événements à chaque élément de la liste
-listItems.forEach(function(item) {
-    item.addEventListener("click", function(event) {
-        event.preventDefault(); // Empêche le lien de se comporter comme une URL
-
-        // Obtenez le texte de l'élément de la liste
-        var listItemText = item.textContent;
-
-        // Affichez le message correspondant dans la zone de message
-        if (messages.hasOwnProperty(listItemText)) {
-            messageArea.textContent = messages[listItemText];
-
-            // Utilisez setTimeout pour masquer le message après 1 seconde
-            setTimeout(function() {
-                messageArea.textContent = "";
-            }, 1000); // 1000 millisecondes = 1 seconde
-        } else {
-            messageArea.textContent = "";
-        }
-    });
-});
+}
 
 
 
@@ -330,10 +321,36 @@ document.getElementById("showSlots").addEventListener("click", function() {
     });
 });
 
+function setupBackgroundChange() {
+    const changeBackgroundLinks = document.querySelectorAll(".change-background-link");
+    const windowElement = document.querySelector(".bkg_img");
+    let oldBackground = '../img/prevention_new.PNG';
+    let currentBackground = '../img/prevention_new.PNG'; // Image de fond par défaut
+
+    changeBackgroundLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Empêche la navigation par défaut
+            const newBackground = link.getAttribute("data-background");
+
+            if (newBackground !== currentBackground) {
+                windowElement.style.backgroundImage = `url('${newBackground}')`;
+                currentBackground = newBackground;
+            } else {
+                // Si l'arrière-plan actuel est le même que celui du lien, revenez à l'arrière-plan initial
+                windowElement.style.backgroundImage = `url('../img/${oldBackground}')`;
+                currentBackground = currentBackground;
+            }
+        });
+    });
+}
+
+// Appelez la fonction pour configurer le changement d'arrière-plan
+setupBackgroundChange();
 
 
 
-//prevention
+
+//****************************************************************************************prevention
 
 const changeBackgroundLinks = document.querySelectorAll(".change-background-link");
     const windowElement = document.querySelector(".bkg_img");
