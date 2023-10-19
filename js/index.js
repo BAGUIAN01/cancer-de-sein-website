@@ -184,21 +184,36 @@ document.addEventListener("chargerContenu", function () {
 
 
 
-// signup
+// *****************************************************************************************************signup
 
-const loginText = document.querySelector(".title-text .login");
-const loginForm = document.querySelector("form.login");
-const loginBtn = document.querySelector("label.login");
-const signupBtn = document.querySelector("label.signup");
-const signupLink = document.querySelector("form .signup-link a");
-signupBtn.onclick = (()=>{
+
+
+function signup_func(){
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    const side = document.querySelector(".slide-controls .slider-tab")
     loginForm.style.marginLeft = "-50%";
     loginText.style.marginLeft = "-50%";
-});
-loginBtn.onclick = (()=>{
-loginForm.style.marginLeft = "0%";
-loginText.style.marginLeft = "0%";
-});
+    side.style.marginLeft ="50%"
+
+}
+
+function login_func(){
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    const side = document.querySelector(".slide-controls .slider-tab")
+    loginForm.style.marginLeft = "0%";
+    loginText.style.marginLeft = "0%";
+    side.style.marginLeft ="0%"
+}
+
+
 signupLink.onclick = (()=>{
 signupBtn.click();
 return false;
