@@ -574,3 +574,55 @@ const changeBackgroundLinks = document.querySelectorAll(".change-background-link
                 showAppointments(target);
             }
         });
+
+
+
+// **********************************************************************Diagnostique
+
+
+function calculerRisque() {
+    // Obtenir les réponses sélectionnées
+    const q1Answer = parseInt(document.querySelector('input[name="q1"]:checked').value);
+    const q2Answer = parseInt(document.querySelector('input[name="q2"]:checked').value);
+    const q3Answer = parseInt(document.querySelector('input[name="q3"]:checked').value);
+    const q4Answers = Array.from(document.querySelectorAll('input[name="q4[]"]:checked')).map(input => parseInt(input.value));
+    const q5Answer = parseInt(document.querySelector('input[name="q5"]:checked').value);
+    const q6Answer = parseInt(document.querySelector('input[name="q6"]:checked').value);
+    const q7Answers = Array.from(document.querySelectorAll('input[name="q7[]"]:checked')).map(input => parseInt(input.value));
+    const q8Answer = parseInt(document.querySelector('input[name="q8"]:checked').value);
+
+    // Obtenir les réponses aux nouvelles questions
+    const age = parseInt(document.getElementById("age").value);
+    const airPollution = parseInt(document.getElementById("airPollution").value);
+    const waterPollution = parseInt(document.getElementById("waterPollution").value);
+
+    // Calculer le score total
+    const q4Score = q4Answers.reduce((total, answer) => total + answer, 0);
+    const q7Score = q7Answers.reduce((total, answer) => total + answer, 0);
+    const totalScore = q1Answer + q2Answer + q3Answer + q4Score + q5Answer + q6Answer + q7Score + q8Answer;
+
+    // Calculer le pourcentage de risque en fonction de l'âge, de la pollution de l'air et de l'eau
+    // ...
+    // (Le reste du code reste inchangé)
+
+    const maxScorePossible = 19;
+    const pourcentageRisque = ((totalScore + ageScore + airPollutionScore + waterPollutionScore) / maxScorePossible) * 100;
+
+    let risque = "Non élevé"; // Par défaut, le risque est considéré comme non élevé
+    if (pourcentageRisque >= 70) {
+        risque = "Élevé";
+    } else if (pourcentageRisque >= 40 && pourcentageRisque < 70) {
+        risque = "Moyen";
+    }
+    // Afficher le résultat
+    const resultElement = document.getElementById("result");
+    alert(`Votre risque est de ${pourcentageRisque.toFixed(2)}%. Le risque est ${risque}`);
+    const progressElement = document.getElementById("risk-progress");
+    progressElement.value = pourcentageRisque;
+}
+
+// Ajouter un écouteur d'événement sur la soumission du formulaire
+document.getElementById("quizForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    calculerRisque(); // Appeler la fonction de calcul du risque
+});
