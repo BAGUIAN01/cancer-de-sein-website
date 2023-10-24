@@ -1,76 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/forum.css">
-    <title>Forum sur le cancer du sein</title>
+    <title>Breast Cancer Forum</title>
+    <link rel="stylesheet" type="text/css" href="../css/forum.css">
 </head>
 <body>
-    <div class="container">
-        <div class="tabs">
-            <button class="tab-button active" data-tab="experiences" onclick="showTab('experiences')">Expériences</button>
-            <button class="tab-button" data-tab="partages" onclick="showTab('partages')">Partages</button>
-        </div>
-        <div class="tab-content" id="experiences">
-            <div class="experience">
-                <img src="../img/coline-morin.jpg" alt="Profil utilisateur 1">
-                <p>Je suis une survivante du cancer du sein depuis 2 ans. J'ai traversé des moments difficiles, mais j'ai trouvé du soutien dans ma famille et ma communauté.</p>
-            </div>
-            <div class="experience">
-                <img src="../img/pers1.png" alt="Profil utilisateur 2">
-                <p>J'ai été diagnostiquée l'année dernière. Le soutien de mes amis et les traitements m'ont aidée à traverser cette épreuve.</p>
-            </div>
-        </div>
-        <div class="tab-content" id="partages" style="display: none;">
-            <div class="partage">
-                <img src="../img/perso2.jpg" alt="Profil utilisateur 3">
-                <p>J'ai terminé ma dernière séance de chimiothérapie aujourd'hui. Je tiens à remercier tous ceux qui m'ont soutenu tout au long de ce voyage.</p>
-            </div>
-            <div class="partage">
-                <img src="../img/miss.jpg" alt="Profil utilisateur 4">
-                <p>Mon cancer du sein a été diagnostiqué tôt grâce à une mammographie. Le dépistage précoce est essentiel. Restez forts, mes sœurs.</p>
-            </div>
-        </div>
-        <button class="add-button" onclick="showAddForm('experience')">Ajouter une expérience</button>
-        <button class="add-button" onclick="showAddForm('partage')">Ajouter un partage</button>
-        <div id="add-form" style="display: none;">
-            <h2>Ajouter une expérience ou un partage</h2>
-            <form action="ajouter.php" method="post">
-                <div class="input-container">
-                    <label for="profil">Profil :</label>
-                    <input type="text" id="profil" name="profil" required>
-                </div>
-                <div class="input-container">
-                    <label for="message">Contenu :</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
-                <div class="button-container">
-                    <button type="submit">Ajouter</button>
-                </div>
+    <header>
+        <h1>Breast Cancer Forum</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Share Your Experience</h2>
+            <form id="comment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" placeholder="Your Comment"></textarea><br><br>
+                <input type="submit" value="Submit" id="submit-button">
             </form>
-        </div>
-    </div>
-
-    <script>
-        function showTab(tabName) {
-            var tabs = document.querySelectorAll('.tab-content');
-            var buttons = document.querySelectorAll('.tab-button');
-            for (var i = 0; i < tabs.length; i++) {
-                tabs[i].style.display = 'none';
-                buttons[i].classList.remove('active');
-            }
-            document.getElementById(tabName).style.display = 'block';
-            document.querySelector("button[data-tab='" + tabName + "']").classList.add('active');
-        }
-
-        function showAddForm(type) {
-            var addForm = document.getElementById('add-form');
-            addForm.style.display = 'block';
-            document.getElementById('profil').value = '';
-            document.getElementById('message').value = '';
-            showTab(type + 's');
-        }
-    </script>
+        </section>
+        <section>
+            <h2>Comments</h2>
+            <ul id="comments-list">
+                <li>
+                    <div class="comment-container">
+                        <img src="profile1.png" alt="User 1">
+                        <div class="comment-content">
+                            <h3>User 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="comment-container">
+                        <img src="profile2.png" alt="User 2">
+                        <div class="comment-content">
+                            <h3>User 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; groupe 3 cai </p>
+    </footer>
+    <script src="../js/forum.js"></script>
 </body>
 </html>
