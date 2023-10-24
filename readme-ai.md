@@ -3,11 +3,12 @@
 <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
 <br>GROUP3</h1>
 <h3>◦ ► INSERT-TEXT</h3>
-<h3>◦ Developed with the software and tools below.</h3>
+<h3>◦ Developed by Group3_CAI.</h3>
 
 <p align="center">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=JavaScript&logoColor=black" alt="JavaScript" />
 <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=flat-square&logo=HTML5&logoColor=white" alt="HTML5" />
+<img src="https://img.shields.io/badge/CSS-E34F26.svg?style=flat-square&logo=CSS&logoColor=white%22" alt="CSS" />
 </p>
 </div>
 
