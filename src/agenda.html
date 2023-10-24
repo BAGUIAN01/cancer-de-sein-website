@@ -11,9 +11,9 @@
         <div id="container">
             <h1>Monthly Agenda</h1>
             <div id="navContainer">
-                <button id="prevMonthBtn" onclick="previousMonth()">&#8592;</button>
+                <button id="prevMonthBtn" onclick="previousMonth();return false">&#8592;</button>
                 <h2 id="currentMonth">Month Year</h2>
-                <button id="nextMonthBtn" onclick="nextMonth()">&#8594;</button>
+                <button id="nextMonthBtn" onclick="nextMonth();return false">&#8594;</button>
             </div>
     
             <table>
@@ -37,13 +37,13 @@
                 <label for="date">Select a Date:</label>
                 <input type="date" id="date" />
                 <input type="text" id="appointment" placeholder="Enter an appointment">
-                <button onclick="addAppointment()">Add Appointment</button>
+                <button onclick="addAppointment();return false;">Add Appointment</button>
             </div>
         </div>
     
     </div>
     
-    <script src="../js/agenda.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

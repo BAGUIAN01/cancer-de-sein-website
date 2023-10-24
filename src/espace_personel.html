@@ -8,6 +8,7 @@
 
 <body>
     <div class="principale" id="espace_perso_id">
+        <h1 class="g_titre"> Espace personnel</h1>
         <div class="window">
             <!--button -->
             <div class="button-container">
@@ -15,27 +16,29 @@
                 <button>Prendre RDV</button>
                 <button>carnet de santé</button> 
                 <button>Assurance</button>
+                
              -->
+             
     
-                <button id="notifPopup">Notifications</button>
+                <button id="notifPopup" onclick="notifPopup(); return false;">Notifications</button>
                 <div id="notifpopup" class="hidden">
                     <span id="closePopup" class="close">&times;</span>
                     <p>Aucune nouvelle notification</p>
                 </div>
-                <button id="carnetPopup">carnet de santé</button>
+                <button id="carnetPopup" onclick="carnetPopup(); return false;">carnet de santé</button>
                 <div id="carnetpopup" class="hidden">
                     <span id="closeCarnetPopup" class="close">&times;</span>
                     <p>Aucun carnet de santé ajouté</p>
                 </div>
                
-                <button id="showSlots">Prendre RDV</button>
-                <div id="slotsPopup" class="hidden">
+                <button id="showSlots" onclick="prendreRDV(); return false;">Prendre RDV</button>
+                <div id="slotsPopup" class="hidden" >
                     <span id="closeSlots" class="close">&times;</span>
                     <h2>Créneaux horaires disponibles :</h2>
                     <ul id="slotList"></ul>
                 </div>
     
-                <button id="assurPopup">Assurance</button>
+                <button id="assurPopup" onclick="assurPopup(); return false;">Assurance</button>
                 <div id="assurpopup" class="hidden">
                     <span id="closeAssurPopup" class="close">&times;</span>
                     <p>Aucune assurance n'est contractée </p>
