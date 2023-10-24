@@ -1,27 +1,20 @@
-body {
-	background-image: url(../img/bg.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
 
-header {
-	background-color: pink;
-	padding: 20px;
-}
 
-h1 {
+
+
+.principale h1{
 	color: white;
 	text-align: center;
 }
 
-main {
+.main_exp{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 20px;
 }
 
-section {
+.section_exp {
 	background-color: white;
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
@@ -30,28 +23,28 @@ section {
 	width: 45%;
 }
 
-h2 {
+.main_exp h2 {
 	color: pink;
 	margin-bottom: 10px;
 }
 
-form {
+#comment-div {
 	display: flex;
 	flex-direction: column;
 }
 
-label {
+#comment-div label {
 	margin-bottom: 5px;
 }
 
-input[type="text"], textarea {
+#comment-div input[type="text"], textarea {
 	border-radius: 5px;
 	border: none;
 	margin-bottom: 10px;
 	padding: 5px;
 }
 
-input[type="submit"] {
+#comment-div input[type="submit"] {
 	background-color: pink;
 	border: none;
 	border-radius: 5px;
@@ -60,21 +53,25 @@ input[type="submit"] {
 	padding: 10px;
 }
 
-ul {
+.section_exp ul {
 	list-style: none;
 	padding: 0;
 }
+.section_exp h2 {
+	color: pink;
+	margin-bottom: 10px;
+}
 
-li {
+.section_exp li {
 	margin-bottom: 20px;
 }
 
-h3 {
+.comment-content h3 {
 	color: pink;
 	margin-bottom: 5px;
 }
 
-p {
+.comment-content p {
 	margin-bottom: 10px;
 }
 

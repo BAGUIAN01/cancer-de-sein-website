@@ -1,51 +1,55 @@
 <!DOCTYPE html>
-<html>
+
 <head>
     <title>Breast Cancer Forum</title>
     <link rel="stylesheet" type="text/css" href="../css/forum.css">
 </head>
 <body>
-    <header>
+    <div class="principale">
         <h1>Breast Cancer Forum</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Share Your Experience</h2>
-            <form id="comment-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
-                <label for="comment">Comment:</label>
-                <textarea id="comment" name="comment" placeholder="Your Comment"></textarea><br><br>
-                <input type="submit" value="Submit" id="submit-button">
-            </form>
-        </section>
-        <section>
-            <h2>Comments</h2>
-            <ul id="comments-list">
-                <li>
-                    <div class="comment-container">
-                        <img src="profile1.png" alt="User 1">
-                        <div class="comment-content">
-                            <h3>User 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+        <div class="main_exp">
+
+            <div class="section_exp">
+                <h2>Share Your Experience</h2>
+                <div id="comment-div">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" placeholder="Your Comment"></textarea><br><br>
+                    <input type="submit" value="Submit" id="submit-button">
+                </div>
+            </div>
+            <div class="section_exp">
+                <h2>Comments</h2>
+                <ul id="comments-list">
+                    <li>
+                        <div class="comment-container">
+                            <img src="profile1.png" alt="User 1">
+                            <div class="comment-content">
+                                <h3>User 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="comment-container">
-                        <img src="profile2.png" alt="User 2">
-                        <div class="comment-content">
-                            <h3>User 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                    <li>
+                        <div class="comment-container">
+                            <img src="profile2.png" alt="User 2">
+                            <div class="comment-content">
+                                <h3>User 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; groupe 3 cai </p>
-    </footer>
-    <script src="../js/forum.js"></script>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       
+        <script src="../js/forum.js"></script>
+
+
+    </div>
+    
+       
 </body>
 </html>
