@@ -46,39 +46,9 @@ function initializeCalendar() {
     }
   }
   
-  function previousMonth() {
-    window.currentDate.setMonth(window.currentDate.getMonth() - 1);
-    updateCalendar(window.currentDate, window.appointments);
-  }
   
-  function nextMonth() {
-    window.currentDate.setMonth(window.currentDate.getMonth() + 1);
-    updateCalendar(window.currentDate, window.appointments);
-  }
   
-  function addAppointment() {
-    const dateInput = document.getElementById("date");
-    const date = new Date(dateInput.value);
-    const appointmentInput = document.getElementById("appointment");
-    const appointment = appointmentInput.value;
   
-    if (date.getMonth() === window.currentDate.getMonth() && date.getFullYear() === window.currentDate.getFullYear()) {
-      const day = date.getDate();
-      const key = `${window.currentDate.getFullYear()}-${window.currentDate.getMonth() + 1}-${day}`;
-  
-      if (key in window.appointments) {
-        window.appointments[key].push(appointment);
-      } else {
-        window.appointments[key] = [appointment];
-      }
-  
-      updateCalendar(window.currentDate, window.appointments);
-      dateInput.value = "";
-      appointmentInput.value = "";
-    } else {
-      alert("Please select a date in the current month.");
-    }
-  }
   
   function showAppointments(element) {
     const key = element.dataset.key;
@@ -125,5 +95,38 @@ function initializeCalendar() {
       showAppointments(target);
     }
   });
+
+  function previousMonth() {
+    window.currentDate.setMonth(window.currentDate.getMonth() - 1);
+    updateCalendar(window.currentDate, window.appointments);
+  }
+  
+  function nextMonth() {
+    window.currentDate.setMonth(window.currentDate.getMonth() + 1);
+    updateCalendar(window.currentDate, window.appointments);
+  }
+  function addAppointment() {
+    const dateInput = document.getElementById("date");
+    const date = new Date(dateInput.value);
+    const appointmentInput = document.getElementById("appointment");
+    const appointment = appointmentInput.value;
+  
+    if (date.getMonth() === window.currentDate.getMonth() && date.getFullYear() === window.currentDate.getFullYear()) {
+      const day = date.getDate();
+      const key = `${window.currentDate.getFullYear()}-${window.currentDate.getMonth() + 1}-${day}`;
+  
+      if (key in window.appointments) {
+        window.appointments[key].push(appointment);
+      } else {
+        window.appointments[key] = [appointment];
+      }
+  
+      updateCalendar(window.currentDate, window.appointments);
+      dateInput.value = "";
+      appointmentInput.value = "";
+    } else {
+      alert("Please select a date in the current month.");
+    }
+  }
   
   initializeCalendar();
