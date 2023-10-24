@@ -1448,12 +1448,63 @@ button:hover {
 input[type="checkbox"] {
   margin-right: 5px; /* Marge à droite pour les checkboxes */
 }
+
 input[type="radio"] {
   /* margin-left: 100px; Marge à droite pour les checkboxes */
   
   background-color: red;
 
 }
+
+
+.submit-diagnostique {
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 10em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin-left: 40%;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+ }
+ 
+ .submit-diagnostique:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ .submit-diagnostique:hover {
+  color: var(--box1-color);
+ }
+ 
+ .submit-diagnostique:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ .submit-diagnostique:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ .submit-diagnostique:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+ }
 
 
 
