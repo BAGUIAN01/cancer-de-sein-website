@@ -17,7 +17,7 @@
 ## 📖 Table of Contents
 - [📖 Table of Contents](#-table-of-contents)
 - [📍 Overview](#-overview)
-- [📦 Features](#-features)
+<!-- - [📦 Features](#-features) -->
 - [📂 repository Structure](#-repository-structure)
 - [⚙️ Modules](#modules)
 - [🚀 Getting Started](#-getting-started)
@@ -25,9 +25,9 @@
     - [🤖 Running GROUP3](#-running-GROUP3)
     - [🧪 Tests](#-tests)
 - [🛣 Roadmap](#-roadmap)
-- [🤝 Contributing](#-contributing)
+<!-- - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
-- [👏 Acknowledgments](#-acknowledgments)
+- [👏 Acknowledgments](#-acknowledgments) -->
 
 ---
 
@@ -42,11 +42,11 @@
 
 ---
 
-## 📦 Features
+<!-- ## 📦 Features
 
 ► INSERT-TEXT
 
----
+--- -->
 
 
 ## 📂 Repository Structure
@@ -121,19 +121,19 @@
 
 | File                              | Summary       |
 | ---                               | ---           |
-| [stylesTestAyoub.css]({file})     | ► INSERT-TEXT |
-| [styles_espace_perso.css]({file}) | ► INSERT-TEXT |
-| [style2.css]({file})              | ► INSERT-TEXT |
-| [styles.css]({file})              | ► INSERT-TEXT |
-| [forum.css]({file})               | ► INSERT-TEXT |
-| [login.css]({file})               | ► INSERT-TEXT |
-| [stylesAccueilAyoub.css]({file})  | ► INSERT-TEXT |
-| [agenda.css]({file})              | ► INSERT-TEXT |
-| [style.css]({file})               | ► INSERT-TEXT |
-| [prevention.css]({file})          | ► INSERT-TEXT |
-| [contactusAyoub.css]({file})      | ► INSERT-TEXT |
-| [style_login.css]({file})         | ► INSERT-TEXT |
-| [style_signup.css]({file})        | ► INSERT-TEXT |
+| [stylesTestAyoub.css]({file})     | css de la page diagnostique |
+| [styles_espace_perso.css]({file}) | css de la page espace personnel |
+| [style2.css]({file})              | css global de toute l'application|
+| [styles.css]({file})              | |
+| [forum.css]({file})               | css de la page forum |
+| [login.css]({file})               |css de la page login |
+| [stylesAccueilAyoub.css]({file})  | css de la page a propos |
+| [agenda.css]({file})              | css de la page agenda|
+| [style.css]({file})               | |
+| [prevention.css]({file})          |css de la page prevention|
+| [contactusAyoub.css]({file})      | css de la page contact|
+| [style_login.css]({file})         ||
+| [style_signup.css]({file})        |css de la page de connexion|
 
 </details>
 
@@ -156,24 +156,24 @@
 
 | File                                     | Summary       |
 | ---                                      | ---           |
-| [espace_personel.html]({file})           | ► INSERT-TEXT |
-| [helloworld_hiba.html]({file})           | ► INSERT-TEXT |
-| [hello_world_harouna.html]({file})       | ► INSERT-TEXT |
-| [AccueilAyoub.html]({file})              | ► INSERT-TEXT |
-| [DiagnosticAyoub.html]({file})           | ► INSERT-TEXT |
-| [contactusAyoub.html]({file})            | ► INSERT-TEXT |
-| [loader.html]({file})                    | ► INSERT-TEXT |
-| [hello_world_nina.html]({file})          | ► INSERT-TEXT |
-| [login.html]({file})                     | ► INSERT-TEXT |
-| [forum.html]({file})                     | ► INSERT-TEXT |
-| [agenda.html]({file})                    | ► INSERT-TEXT |
-| [fichieràsupprimer.html]({file})         | ► INSERT-TEXT |
-| [forum copy.html]({file})                | ► INSERT-TEXT |
-| [indexpage.html]({file})                 | ► INSERT-TEXT |
-| [hello_world_ayoub_elfinou.html]({file}) | ► INSERT-TEXT |
-| [login_Hiba.html]({file})                | ► INSERT-TEXT |
-| [signup.html]({file})                    | ► INSERT-TEXT |
-| [prevention.html]({file})                | ► INSERT-TEXT |
+| [espace_personel.html]({file})           | html de la page |
+| [helloworld_hiba.html]({file})           | |
+| [hello_world_harouna.html]({file})       | |
+| [AccueilAyoub.html]({file})              | html de la page apropos |
+| [DiagnosticAyoub.html]({file})           | html de la page diagnostique |
+| [contactusAyoub.html]({file})            | html de la page contact |
+| [loader.html]({file})                    | html de la page loader|
+| [hello_world_nina.html]({file})          | |
+| [login.html]({file})                     | |
+| [forum.html]({file})                     |html de la page forum|
+| [agenda.html]({file})                    | html de la page agenda |
+| [fichieràsupprimer.html]({file})         ||
+| [forum copy.html]({file})                |  |
+| [indexpage.html]({file})                 |  |
+| [hello_world_ayoub_elfinou.html]({file}) ||
+| [login_Hiba.html]({file})                |  |
+| [signup.html]({file})                    |html de la page de connexion|
+| [prevention.html]({file})                |html de la page prévention|
 
 </details>
 
@@ -195,12 +195,12 @@ Please ensure you have the following dependencies installed on your system:
 
 1. Clone the GROUP3 repository:
 ```sh
-git clone ../GROUP3
+git clone https://git.enib.fr/cai-g03/group3.git
 ```
 
 2. Change to the project directory:
 ```sh
-cd GROUP3
+cd group3
 ```
 
 3. Install the dependencies:
@@ -211,12 +211,12 @@ cd GROUP3
 ### 🤖 Running GROUP3
 
 ```sh
-► INSERT-TEXT
+Aucune dépendance a installée
 ```
 
 ### 🧪 Tests
 ```sh
-► INSERT-TEXT
+index.html
 ```
 
 ---
@@ -224,13 +224,14 @@ cd GROUP3
 
 ## 🛣 Project Roadmap
 
-> - [X] `ℹ️  Task 1: Implement X`
-> - [ ] `ℹ️  Task 2: Implement Y`
-> - [ ] `ℹ️ ...`
+> - [X] `ℹ️  Task 1: Conception sur figma`
+> - [ ] `ℹ️  Task 2: développement des différentes pages`
+> - [ ] `ℹ️  Task 3: merged des différentes pages`
+<!-- > - [ ] `ℹ️ ...` -->
 
 
 ---
-
+<!-- 
 ## 🤝 Contributing
 
 Contributions are welcome! Here are several ways you can contribute:
@@ -284,4 +285,4 @@ This project is protected under the [SELECT-A-LICENSE](https://choosealicense.co
 [**Return**](#Top)
 
 ---
-
+ -->
