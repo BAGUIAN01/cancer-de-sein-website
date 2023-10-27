@@ -37,17 +37,18 @@
    Nous nous  focaliserons sur la partie front end lors de la conception de cette application. La réalisation complète de cette application nécessiterait une collaboration avec des professionnels de santé pour le développement des aspects techniques.
    Pour le développement des différentes fenêtres,  les langages html, CSS  et JavaScript seront principalement utilisés.
    Le projet consistera à la mise en place d’une application permettant au femmes de se connecter et accéder aux différentes fenêtres d’aide au diagnostique, de prevention, de partage d’experience, d’espace personnel mais aussi à leur agenda.
+   Contact Information
+
+   Hiba BOURDOUKH: h2bourdo@enib.fr
+
+   Harouna BAGUIAN: h2baguia@enib.fr
+
+   HUYN Nina: n2huynh@enib.fr
+
+   Ayoub elfinou: a1elfino@enib.fr
 
 <img src="./img/Capture d’écran 2023-10-24 à 14.51.02.png" alt="CSS" />
-Contact Information
 
-Hiba BOURDOUKH: h2bourdo@enib.fr
-
-Harouna BAGUIAN: h2baguia@enib.fr
-
-HUYN Nina: n2huynh@enib.fr
-
-Ayoub elfinou: a1elfino@enib.fr
 
 ---
 
