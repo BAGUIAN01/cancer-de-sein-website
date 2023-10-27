@@ -952,6 +952,7 @@ nav.close ~ .dashboard .top{
     border: none;
     color: #fff;
     padding-left: 0;
+    margin-top: 10px;
     
     border-radius: 5px;
     font-size: 20px;

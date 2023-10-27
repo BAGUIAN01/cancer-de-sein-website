@@ -33,6 +33,10 @@
 
 
 ## 📍 Overview
+   Dans le cadre de la lutte contre le cancer du sein, notre entreprise a proposé comme solution une application desktop permettant aux  femmes de se sensibiliser, prévenir et diagnostiquer le cancer du sein afin d’ augmenter le taux de survie.
+   Nous nous  focaliserons sur la partie front end lors de la conception de cette application. La réalisation complète de cette application nécessiterait une collaboration avec des professionnels de santé pour le développement des aspects techniques.
+   Pour le développement des différentes fenêtres,  les langages html, CSS  et JavaScript seront principalement utilisés.
+   Le projet consistera à la mise en place d’une application permettant au femmes de se connecter et accéder aux différentes fenêtres d’aide au diagnostique, de prevention, de partage d’experience, d’espace personnel mais aussi à leur agenda.
 
 <img src="./img/Capture d’écran 2023-10-24 à 14.51.02.png" alt="CSS" />
 
