@@ -182,15 +182,19 @@ Please ensure you have the following dependencies installed on your system:
 
 ### 🔧 Installation
 
-1. Clone the GROUP3 repository:
+1. Clone du projet:
 ```sh
 git clone https://git.enib.fr/cai-g03/group3.git
 ```
 
-2. Change to the project directory:
+2. Allez dans le dossier group3:
 ```sh
 cd group3
 ```
+3. Dépendances:
+
+   Installez l'extension live serveur sur vs code
+
 
 <!-- 3. Install the dependencies:
 ```sh
@@ -198,9 +202,12 @@ cd group3
 ``` -->
 
 ### 🧪 Tests
-```sh
-index.html
-```
+   1- Ouvrir le projet sur vs code
+   2- Installez l'extension live server
+   3- Ouvrir le fichier index.html
+   4- Une fois dans le fichier faites un clique droit et choisir "ouvrir avec live sserver"
+
+
 
 ---
 
