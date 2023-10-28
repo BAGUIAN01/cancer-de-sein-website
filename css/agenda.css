@@ -1,0 +1,96 @@
+body {
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    /* Set a maximum width for the calendar */
+}
+
+th,
+td {
+    border: none;
+    /* Remove the border */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    background-color: rgba(255, 160, 200, 0.8);
+    /* Header background color */
+    color: white;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Cell background color with transparency */
+    position: relative;
+    /* Create a relative positioning context for the day highlight */
+    cursor: pointer;
+    /* Add a cursor pointer for the highlighted day */
+}
+
+td.day-highlight {
+    background-color: rgba(255, 160, 200, 0.8) !important;
+    /* Highlight color */
+    color: white;
+}
+
+.appointment-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    list-style: none;
+    padding: 0;
+}
+
+.appointment-list li {
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+td.day-highlight.clicked .appointment-list {
+    display: block;
+}
+
+#navContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    background-color: rgba(255, 160, 200, 0.8);
+    /* Warmer pink background color with transparency */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgba(255, 100, 150, 0.9);
+    /* Lighter and warmer pink on hover */
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Espace personnel</title>
+    <link rel="stylesheet" type="text/css" href="./css/style2.css">
+</head>
+
+
+<body>
+    <div class="principale" id="espace_perso_id">
+        <h1 class="g_titre"> Espace personnel</h1>
+        <div class="window">
+            <!--button -->
+            <div class="button-container">
+                <!-- <a href="#" class="bouton">Notifications</a>
+                <button>Prendre RDV</button>
+                <button>carnet de santé</button> 
+                <button>Assurance</button>
+                
+             -->
+             
+    
+                <button id="notifPopup" onclick="notifPopup(); return false;">Notifications</button>
+                <div id="notifpopup" class="hidden">
+                    <span id="closePopup" class="close">&times;</span>
+                    <p>Aucune nouvelle notification</p>
+                </div>
+                <button id="carnetPopup" onclick="carnetPopup(); return false;">carnet de santé</button>
+                <div id="carnetpopup" class="hidden">
+                    <span id="closeCarnetPopup" class="close">&times;</span>
+                    <p>Aucun carnet de santé ajouté</p>
+                </div>
+               
+                <button id="showSlots" onclick="prendreRDV(); return false;">Prendre RDV</button>
+                <div id="slotsPopup" class="hidden" >
+                    <span id="closeSlots" class="close">&times;</span>
+                    <h2>Créneaux horaires disponibles :</h2>
+                    <ul id="slotList"></ul>
+                </div>
+    
+                <button id="assurPopup" onclick="assurPopup(); return false;">Assurance</button>
+                <div id="assurpopup" class="hidden">
+                    <span id="closeAssurPopup" class="close">&times;</span>
+                    <p>Aucune assurance n'est contractée </p>
+                    
+                </div>
+                
+            </div>
+            <div class="title-bar">
+                <div class="cste_sante">Constantes de santé</div>
+                <div class="dossier_suivi">Dossier de santé
+                    <div class="content_dossier">
+                        <ul>
+                            <li><a id="ordoPopup" href="" onclick="setupListClickHandler(); return false;">Ordonnance</a></li>
+                            <li><a href="" onclick="setupListClickHandler(); return false;">Agenda</a></li>
+                            <li><a href="#" onclick="setupListClickHandler(); return false;">Guide à suivre </a></li>
+                            <li><a href="#" onclick="setupListClickHandler(); return false;">Assistant virtuel</a></li>
+                        </ul>
+                        <div id="messageArea"></div>
+                      
+                    </div>
+                    <div class="contact">
+                        <span class="label_contact">Contacts en cas d'urgence</span> 
+                        <ul>
+                            <li><a href="#">07 80 99 66 34</a></li>
+                            <li><a href="">06 23 45 67 87</a></li>
+                        </ul>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="content">
+                <div class="cte_sante_bkg">
+                    <div class="button-container">
+                        <button id="glycemie" onclick="showCustomAlert(); return false;">
+                            <img src="../img/glycemie.jpg" alt="Image 1">
+                        </button>
+                       
+                        <button id="imc" onclick="showCustomAlert(); return false;">
+                            <img src="../img/imc.jpg" alt="Image 2">
+                        </button>
+                    </div>
+                    <div>
+                        <span id="customAlert" style="display: none;">
+                            Ce bouton ne fonctionne pas !
+                        </span>
+                       
+                    </div>
+                    
+                    <div class="button-container">
+                        <button id="pression" onclick="showCustomAlert(); return false;">
+                            <img src="../img/pression_art.png" alt="Image 3">
+                        </button>
+                        <button id="scan" onclick="showCustomAlert(); return false;">
+                            <img src="../img/scanner.png" alt="Image 4">
+                        </button>
+                    </div>
+                </div>
+         
+            </div>
+    
+            
+
+        </div>
+    </div>
+    
+
+    <script src="../js/espace_personnel.js"></script>
+</body>
+</html>
