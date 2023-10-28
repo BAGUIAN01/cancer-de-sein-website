@@ -22,7 +22,6 @@
 - [⚙️ Modules](#modules)
 - [🚀 Getting Started](#-getting-started)
     - [🔧 Installation](#-installation)
-    - [🤖 Running GROUP3](#-running-GROUP3)
     - [🧪 Tests](#-tests)
 - [🛣 Roadmap](#-roadmap)
 <!-- - [🤝 Contributing](#-contributing)
@@ -37,6 +36,7 @@
    Nous nous  focaliserons sur la partie front end lors de la conception de cette application. La réalisation complète de cette application nécessiterait une collaboration avec des professionnels de santé pour le développement des aspects techniques.
    Pour le développement des différentes fenêtres,  les langages html, CSS  et JavaScript seront principalement utilisés.
    Le projet consistera à la mise en place d’une application permettant au femmes de se connecter et accéder aux différentes fenêtres d’aide au diagnostique, de prevention, de partage d’experience, d’espace personnel mais aussi à leur agenda.
+
    Contact Information
 
    Hiba BOURDOUKH: h2bourdo@enib.fr
@@ -69,8 +69,6 @@
     │   ├── forum.css
     │   ├── login.css
     │   ├── prevention.css
-    │   ├── style.css
-    │   ├── style2.css
     │   ├── style_login.css
     │   ├── style_signup.css
     │   ├── styles.css
@@ -87,8 +85,6 @@
     │   ├── agenda.js
     │   ├── diagnosticAyoub.js
     │   ├── espace_personnel.js
-    │   ├── index 2.js
-    │   ├── index 3.js
     │   ├── index.js
     │   └── prevention.js
     ├── ressources/
@@ -101,10 +97,6 @@
         ├── fichieràsupprimer.html
         ├── forum copy.html
         ├── forum.html
-        ├── hello_world_ayoub_elfinou.html
-        ├── hello_world_harouna.html
-        ├── hello_world_nina.html
-        ├── helloworld_hiba.html
         ├── indexpage.html
         ├── loader.html
         ├── login.html
@@ -123,7 +115,7 @@
 
 | File                 | Summary       |
 | ---                  | ---           |
-| [index.html]({file}) | ► INSERT-TEXT |
+| [index.html]({file}) | fichier de test |
 
 </details>
 
@@ -151,14 +143,12 @@
 
 | File                          | Summary       |
 | ---                           | ---           |
-| [diagnosticAyoub.js]({file})  | ► INSERT-TEXT |
-| [agenda.js]({file})           | ► INSERT-TEXT |
-| [index.js]({file})            | ► INSERT-TEXT |
-| [index 3.js]({file})          | ► INSERT-TEXT |
-| [index 2.js]({file})          | ► INSERT-TEXT |
-| [accueilAyoub.js]({file})     | ► INSERT-TEXT |
-| [espace_personnel.js]({file}) | ► INSERT-TEXT |
-| [prevention.js]({file})       | ► INSERT-TEXT |
+| [diagnosticAyoub.js]({file})  | js de la page diagnostique |
+| [agenda.js]({file})           | js de la page agenda |
+| [index.js]({file})            | js de la page principale |
+| [accueilAyoub.js]({file})     | js de la page a propos|
+| [espace_personnel.js]({file}) | js de la page espace personnel |
+| [prevention.js]({file})       | js de la page prevention|
 
 </details>
 
@@ -167,21 +157,13 @@
 | File                                     | Summary       |
 | ---                                      | ---           |
 | [espace_personel.html]({file})           | html de la page |
-| [helloworld_hiba.html]({file})           | |
-| [hello_world_harouna.html]({file})       | |
+
 | [AccueilAyoub.html]({file})              | html de la page apropos |
 | [DiagnosticAyoub.html]({file})           | html de la page diagnostique |
 | [contactusAyoub.html]({file})            | html de la page contact |
 | [loader.html]({file})                    | html de la page loader|
-| [hello_world_nina.html]({file})          | |
-| [login.html]({file})                     | |
 | [forum.html]({file})                     |html de la page forum|
 | [agenda.html]({file})                    | html de la page agenda |
-| [fichieràsupprimer.html]({file})         ||
-| [forum copy.html]({file})                |  |
-| [indexpage.html]({file})                 |  |
-| [hello_world_ayoub_elfinou.html]({file}) ||
-| [login_Hiba.html]({file})                |  |
 | [signup.html]({file})                    |html de la page de connexion|
 | [prevention.html]({file})                |html de la page prévention|
 
@@ -195,11 +177,10 @@
 
 Please ensure you have the following dependencies installed on your system:
 
-`- ℹ️ Dependency 1`
+`- ℹ️ Dependency 1 : html5`
 
-`- ℹ️ Dependency 2`
+`- ℹ️ Dependency 2:css, javascript`
 
-`- ℹ️ ...`
 
 ### 🔧 Installation
 
@@ -216,12 +197,6 @@ cd group3
 3. Install the dependencies:
 ```sh
 ► INSERT-TEXT
-```
-
-### 🤖 Running GROUP3
-
-```sh
-Aucune dépendance a installée
 ```
 
 ### 🧪 Tests
