@@ -125,8 +125,7 @@
 | ---                               | ---           |
 | [stylesTestAyoub.css]({file})     | css de la page diagnostique |
 | [styles_espace_perso.css]({file}) | css de la page espace personnel |
-| [style2.css]({file})              | css global de toute l'application|
-| [styles.css]({file})              | |
+| [style.css]({file})              | css global de toute l'application|
 | [forum.css]({file})               | css de la page forum |
 | [login.css]({file})               |css de la page login |
 | [stylesAccueilAyoub.css]({file})  | css de la page a propos |
@@ -157,7 +156,6 @@
 | File                                     | Summary       |
 | ---                                      | ---           |
 | [espace_personel.html]({file})           | html de la page |
-
 | [AccueilAyoub.html]({file})              | html de la page apropos |
 | [DiagnosticAyoub.html]({file})           | html de la page diagnostique |
 | [contactusAyoub.html]({file})            | html de la page contact |
@@ -194,10 +192,10 @@ git clone https://git.enib.fr/cai-g03/group3.git
 cd group3
 ```
 
-3. Install the dependencies:
+<!-- 3. Install the dependencies:
 ```sh
 ► INSERT-TEXT
-```
+``` -->
 
 ### 🧪 Tests
 ```sh
