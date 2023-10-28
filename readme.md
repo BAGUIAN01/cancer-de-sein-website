@@ -202,10 +202,10 @@ cd group3
 ``` -->
 
 ### 🧪 Tests
-   1- Ouvrir le projet sur vs code
-   2- Installez l'extension live server
-   3- Ouvrir le fichier index.html
-   4- Une fois dans le fichier faites un clique droit et choisir "ouvrir avec live sserver"
+   1. Ouvrir le projet sur vs code
+   2. Installez l'extension live server
+   3. Ouvrir le fichier index.html
+   4. Une fois dans le fichier faites un clique droit et choisir "ouvrir avec live sserver"
 
 
 
